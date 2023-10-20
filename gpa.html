@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #18044b;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        footer{
+            background-color: #18044b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            font-size: 18px;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+        input {
+            font-size: 16px;
+        }
+        select {
+            font-size: 16px;
+        }
+        option {
+            font-size: 16px;
+        }
+        h2, h4, h5 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        #result {
+            background-color: #18044b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GPA Calculator</h1>
+    </header>
+
+    <div>
+        <h5>
+            Course (optional)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Credits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Grade
+        </h5>
+
+        <form id="gpaCalculator">
+            <div id="subjects">
+                <nav>
+                    1.<input type="text" name="subject[]" value="">
+                    <input type="number" name="credit[]" min="0" max="15" step="0.5" value="1">
+                    <select name="grade[]">
+                    <option value=" "> </option>
+                        <option value="4 (A)">A</option>
+                        <option value="3.5 (B+)">B+</option>
+                        <option value="3 (B)">B</option>
+                        <option value="2.5 (C+)">C+</option>
+                        <option value="2 (C)">C</option>
+                        <option value="1.5 (D+)">D+</option>
+                        <option value="1 (D)">D</option>
+                        <option value="0 (F)">F</option>
+                    </select>
+                    <br>
+                    2.<input type="text" name="subject[]" value="">
+                    <input type="number" name="credit[]" min="0" max="15" step="0.5" value="1">
+                    <select name="grade[]">
+                    <option value=" "> </option>
+                        <option value="4 (A)">A</option>
+                        <option value="3.5 (B+)">B+</option>
+                        <option value="3 (B)">B</option>
+                        <option value="2.5 (C+)">C+</option>
+                        <option value="2 (C)">C</option>
+                        <option value="1.5 (D+)">D+</option>
+                        <option value="1 (D)">D</option>
+                        <option value="0 (F)">F</option>
+                    </select>
+                    <br>
+                    3.<input type="text" name="subject[]" value="">
+                    <input type="number" name="credit[]" min="0" max="15" step="0.5" value="1">
+                    <select name="grade[]">
+                    <option value=" "> </option>
+                        <option value="4 (A)">A</option>
+                        <option value="3.5 (B+)">B+</option>
+                        <option value="3 (B)">B</option>
+                        <option value="2.5 (C+)">C+</option>
+                        <option value="2 (C)">C</option>
+                        <option value="1.5 (D+)">D+</option>
+                        <option value="1 (D)">D</option>
+                        <option value="0 (F)">F</option>
+                    </select>
+                    <br>
+                    4.<input type="text" name="subject[]" value="">
+                    <input type="number" name="credit[]" min="0" max="15" step="0.5" value="1">
+                    <select name="grade[]">
+                    <option value=" "> </option>
+                        <option value="4 (A)">A</option>
+                        <option value="3.5 (B+)">B+</option>
+                        <option value="3 (B)">B</option>
+                        <option value="2.5 (C+)">C+</option>
+                        <option value="2 (C)">C</option>
+                        <option value="1.5 (D+)">D+</option>
+                        <option value="1 (D)">D</option>
+                        <option value="0 (F)">F</option>
+                    </select>
+                    <br>
+                    5.<input type="text" name="subject[]" value="">
+                    <input type="number" name="credit[]" min="0" max="15" step="0.5" value="1">
+                    <select name="grade[]">
+                    <option value=" "> </option>
+                        <option value="4 (A)">A</option>
+                        <option value="3.5 (B+)">B+</option>
+                        <option value="3 (B)">B</option>
+                        <option value="2.5 (C+)">C+</option>
+                        <option value="2 (C)">C</option>
+                        <option value="1.5 (D+)">D+</option>
+                        <option value="1 (D)">D</option>
+                        <option value="0 (F)">F</option>
+                    </select>
+                    <br>
+                    6.<input type="text" name="subject[]" value="">
+                    <input type="number" name="credit[]" min="0" max="15" step="0.5" value="1">
+                    <select name="grade[]">
+                    <option value=" "> </option>
+                        <option value="4 (A)">A</option>
+                        <option value="3.5 (B+)">B+</option>
+                        <option value="3 (B)">B</option>
+                        <option value="2.5 (C+)">C+</option>
+                        <option value="2 (C)">C</option>
+                        <option value="1.5 (D+)">D+</option>
+                        <option value="1 (D)">D</option>
+                        <option value="0 (F)">F</option>
+                    </select>
+                    <br>
+                </nav>
+            </div>
+            <br>
+            <br>
+            <nav>
+                <input type="submit" value="Calculate">
+                <input type="reset" value="Clear" onclick="location.reload();">
+            </nav>
+        </form>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        document.getElementById('gpaCalculator').addEventListener('submit', function (e) {
+            e.preventDefault();
+    
+            const creditInputs = document.getElementsByName('credit[]');
+            const gradeInputs = document.getElementsByName('grade[]');
+            let sum = 0.0;
+            let sum_credit = 0;
+    
+            for (let i = 0; i < creditInputs.length; i++) {
+                const credit = parseFloat(creditInputs[i].value);
+                const grade = gradeInputs[i].value;
+    
+                if (!isNaN(credit) && grade.trim() !== '') {
+                    if (grade === "4 (A)") {
+                        sum += credit * 4;
+                    } else if (grade === "3.5 (B+)") {
+                        sum += credit * 3.5;
+                    } else if (grade === "3 (B)") {
+                        sum += credit * 3;
+                    } else if (grade === "2.5 (C+)") {
+                        sum += credit * 2.5;
+                    } else if (grade === "2 (C)") {
+                        sum += credit * 2;
+                    } else if (grade === "1.5 (D+)") {
+                        sum += credit * 1.5;
+                    } else if (grade === "1 (D)") {
+                        sum += credit * 1;
+                    } else if (grade === "0 (F)") {
+                        sum += credit * 0;
+                    }
+                    sum_credit += credit;
+                }
+            }
+    
+            if (sum_credit !== 0) {
+                const average = sum / sum_credit;
+                document.getElementById('result').innerHTML = 'GPA = ' + average.toFixed(2);
+            }
+        });
+    </script>
+</body>
+</html>
